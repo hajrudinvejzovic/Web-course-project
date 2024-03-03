@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffac33, #66b3ff);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #008080;
+        }
+        .sidebar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #222;
+            overflow-x: hidden;
+            padding-top: 60px; /* Adjusted for header height */
+        }
+        .sidebar a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #008080;
+        }
+        .content {
+            margin-left: 200px; /* Adjusted for sidebar width */
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="sidebar">
+        <a href="#">Button 1</a>
+        <a href="#">Button 2</a>
+        <a href="#">Button 3</a>
+        <a href="#">Button 4</a>
+        <a href="#">Button 5</a>
+        <a href="#">Button 6</a>
+        <a href="#">Button 7</a>
+        <a href="#">Button 8</a>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Our Professional Website</h1>
+        <p>This is a professional welcome page example with a modern navbar and sidebar.</p>
+        <a href="#" class="button">Get Started</a>
+
+        <!-- Additional content sections -->
+        <div class="section">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue eget neque ultricies, sit amet ultrices libero cursus.</p>
+        </div>
+
+        <div class="section">
+            <h2>Section 2</h2>
+            <p>Sed lobortis sapien vitae velit varius consequat. Integer sed ligula rutrum, mattis nunc non, aliquam felis.</p>
+        </div>
+        <div class="section">
+            <h2>Section 3</h2>
+            <p>Sed lobortis sapien vitae velit varius consequat. Integer sed ligula rutrum, mattis nunc non, aliquam felis.</p>
+        </div>
+        <div class="section">
+            <h2>Section 4</h2>
+            <p>Sed lobortis sapien vitae velit varius consequat. Integer sed ligula rutrum, mattis nunc non, aliquam felis.</p>
+        </div>
+        <div class="section">
+            <h2>Section 5</h2>
+            <p>Sed lobortis sapien vitae velit varius consequat. Integer sed ligula rutrum, mattis nunc non, aliquam felis.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2022 Your Company Name. All Rights Reserved.
+    </div>
+</body>
+</html>
