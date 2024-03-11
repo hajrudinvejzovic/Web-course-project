@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart - Toy Shop</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+
 </head>
 <body>
     <div class="container-fluid">
         <div class="row custom-container">
             <div class="col-md-12 header">
-                <img src="images/logo.png" alt="Toy Shop" class = "logo">
+                <img src="images/logo.png" alt="Toy Shop" class="logo">
             </div>
         </div>
         <div class="row">
@@ -21,14 +23,12 @@
                 <button class="btn btn-link btn-light" type="button">Toys</button>
                 <button class="btn btn-link btn-light" type="button">About Us</button>
                 <button class="btn btn-link btn-light" type="button">Contact</button>
-                <button class="btn btn-link btn-primary" type="button"><a href = "shopcart.html">Shopping Cart</a></button>
+                <button class="btn btn-link btn-primary" type="button"><a href="shopcart.html">Shopping Cart</a></button>
             </div>
         </div>
-    </div>
         <div class="row">
-           
-            <div class="col-md-10  content-cart" >
-                <h1>Shopping Cart</h1>
+            <div class="col-md-10 col-sm-12 mx-auto content-cart text-center"> <!-- Center align content -->
+                <h1 class="mb-4">Shopping Cart</h1> <!-- Add margin-bottom for spacing -->
                 <!-- Shopping cart content goes here -->
                 <div class="cart-item">
                     <img src="images/toy1.jpg" alt="Toy 1" class="product-photo">
@@ -48,9 +48,7 @@
                         <button class="btn btn-link btn-remove" type="button">Remove</button>
                     </div>
                 </div>
-                <div class="cart-item">
-                    <!-- Add more cart items as needed -->
-                </div>
+                <!-- Add more cart items as needed -->
                 <div class="cart-total">
                     <h2>Total: $25.00</h2>
                 </div>
@@ -61,7 +59,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 footer">
+            
+            <div class="col-md-12 footer mt-4">
                 &copy; 2024 Toy Shop. All Rights Reserved.
             </div>
         </div>

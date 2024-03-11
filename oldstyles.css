@@ -33,6 +33,10 @@ body {
 .navbar a:hover {
     background-color: #ff9933; /* Light orange */
 }
+.navbar .btn {
+    width: 120px; 
+    height: 50px;
+}
 
 .home :hover{
     background-color: #70a7ff;
