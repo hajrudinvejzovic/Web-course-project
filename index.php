@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 
 Flight::route('/',function(){
-    require 'welcome.html';
+    require '/Bootstrap-theme/index.html';
 });
 
 Flight::start();
