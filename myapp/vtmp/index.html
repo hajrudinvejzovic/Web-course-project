@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>HTML5</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../Cubico theme/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/spapp.css" />
+    <link rel="stylesheet" href="../../assets/css/custom.css" />
+    
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+  </head>
+  <header>
+    <!-- TOP HEADER -->
+    <div id="top-header">
+      <div class="container">
+        <ul class="header-links pull-left">
+          <li><a href="#"><i class="fa fa-phone"></i> +387-62-848-039</a></li>
+          <li><a href="#"><i class="fa fa-envelope-o"></i> hajrudin.vejzovic@stu.ibu.edu.ba</a></li>
+          <li><a href="#"><i class="fa fa-map-marker"></i> Butmirska cesta- 18d</a></li>
+        </ul>
+        <ul class="header-links pull-right">
+          <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+          <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+          <li><a href="C:\Bitnami nakon deinstalacije\htdocs\Web Project\Web-course-project\Cubico theme\login.html"><i class="fa fa-user-o"></i> Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /TOP HEADER -->
+
+    <!-- MAIN HEADER -->
+    <div id="header">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-3 d-flex align-items-center justify-content-end">
+            <div class="header-logo">
+              <a href="#" class="logo">
+                <img src="./img/cube-logo.png" alt="cube image" class="navbar-logo" style="width: 90px; height: 90px;">
+              </a>
+            </div >
+            <div class="d-sm-none d-md-block text-center" >
+              <p><h4 style="color: rgb(236, 49, 49); letter-spacing: 20px;">CUU</h4></p>
+              <p><h4 style="color: rgb(72, 214, 72); letter-spacing: 25px;">BII</h4></p>
+              <p><h4 style="color: yellow; letter-spacing: 20px;">COO</h4></p>
+            </div>
+          </div>
+          <!-- /LOGO -->
+
+          <!-- SEARCH BAR -->
+          <div class="col-md-6">
+            <div class="header-search">
+              <form>
+                <input class="input" placeholder="Search here" style="width: 80%;">
+                <button class="search-btn">Search</button>
+              </form>
+            </div>
+          </div>
+          <!-- /SEARCH BAR -->
+
+          <!-- ACCOUNT -->
+          <div class="col-md-3 clearfix">
+            <div class="header-ctn">
+              
+              <!-- Cart -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Your Cart</span>
+                  <div class="qty">3</div>
+                </a>
+                <div class="cart-dropdown">
+                  <div class="cart-list">
+                    <div class="product-widget">
+                      <div class="product-img">
+                        <img src="./img/bunny.png" alt="">
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-name"><a href="#">Bunny with Faberg egg</a></h3>
+                        <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+                      </div>
+                      <button class="delete"><i class="fa fa-close"></i></button>
+                    </div>
+
+                    <div class="product-widget">
+                      <div class="product-img">
+                        <img src="./img/bunny.png" alt="">
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-name"><a href="#">Bunny2 with Faberg egg</a></h3>
+                        <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+                      </div>
+                      <button class="delete"><i class="fa fa-close"></i></button>
+                    </div>
+                  </div>
+                  <div class="cart-summary">
+                    <small>3 Item(s) selected</small>
+                    <h5>SUBTOTAL: $2940.00</h5>
+                  </div>
+                  <div class="cart-btns">
+                    <a href="#">View Cart</a>
+                    <a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Cart -->
+
+              <!-- Menu Toogle -->
+              <div class="menu-toggle">
+                <a href="#">
+                  <i class="fa fa-bars"></i>
+                  <span>Menu</span>
+                </a>
+              </div>
+              <!-- /Menu Toogle -->
+            </div>
+          </div>
+          <!-- /ACCOUNT -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- /MAIN HEADER -->
+  </header>
+  
+  <body>
+
+    <nav role="navigation">
+      <ul>
+        <li><a href="#login">go to view 1</a></li>
+        <li><a href="#view_2">go to view 2</a></li>
+        <li><a href="#view_3">go to view 3</a></li>
+        
+      </ul>
+    </nav>
+
+    <main id="spapp" role="main">
+      <section id="view_2"></section>
+      <section id="login" data-load = "login.html"><h1>LOGIN</h1></section>
+      <section id="error_404"><h1>Page not found</h1></section>
+      <section id="view_1" data-load="view_1.html" ></section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/jquery.spapp.js"></script>
+    <script src="../../assets/js/"></script>
+
+
+    <script>
+      var app = $.spapp({
+          defaultView: "#page1",
+          templateDir: "./views/"
+
+      });
+
+
+      app.run();
+  </script>
+
+  </body>
+   
+  <!-- NEWSLETTER -->
+  <div id="newsletter" class="section">
+    <!-- container -->
+    <div class="container">
+      <!-- row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="newsletter">
+            <p>Sign Up for the <strong>R A F F L I N G</strong></p>
+            <form>
+              <input class="input" type="email" placeholder="Enter Your Email">
+              <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+            </form>
+            <ul class="newsletter-follow">
+              <li>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.x.com/"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /NEWSLETTER -->
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <!-- top footer -->
+    <div class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-3 col-xs-6">
+            <div class="footer">
+              <h3 class="footer-title">About Us</h3>
+              <p>Cubico is Toy Shop founded in 2024 by young student called Hajrudin.</p>
+              <ul class="footer-links">
+                <li><a href="#"><i class="fa fa-map-marker"></i>Butmirska cesta-18d</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i>+387-62/848-039</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i>hajrudin.vejzovic@stu.ibu.edu.ba</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="footer">
+              <h3 class="footer-title">Categories</h3>
+              <ul class="footer-links">
+                <li><a href="#">Figures</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Puzzle</a></li>
+                <li><a href="#">Teddybears</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="clearfix visible-xs"></div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="footer">
+              <h3 class="footer-title">Information</h3>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Orders and Returns</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="footer">
+              <h3 class="footer-title">Service</h3>
+              <ul class="footer-links">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">View Cart</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /top footer -->
+
+    <!-- bottom footer -->
+    <div id="bottom-footer" class="section" >
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="footer-payments">
+              <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+              <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+              <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+              <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+              <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+              <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+            </ul>
+            <span class="copyright">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | CUBICO <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">CUBICO</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </span>
+          </div>
+        </div>
+          <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /bottom footer -->
+  </footer>
+  <!-- /FOOTER -->
+
+</html>
